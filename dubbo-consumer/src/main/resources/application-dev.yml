@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name: dubbo-consumer
+    qosEnable: true
+    qosPort: 33333
+    qosAcceptForeignIp: false
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: nacos://127.0.0.1:8848
+    username: nacos
+    password: nacos
+  nacos:
+    service:
+      version: 1.0.0
